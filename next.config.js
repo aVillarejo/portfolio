@@ -4,10 +4,9 @@ const nextConfig = {
   trailingSlash: true,
   images: {
     unoptimized: true
-  }
-  // Si tu repo no está en la raíz del dominio, descomenta y ajusta:
-  // basePath: '/portfolio',
-  // assetPrefix: '/portfolio/'
+  },
+  basePath: '/portfolio',
+  assetPrefix: '/portfolio/'
 }
 
 module.exports = nextConfig

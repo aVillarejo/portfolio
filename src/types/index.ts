@@ -36,8 +36,7 @@ export interface EducationProps {
   degree: string;
   startDate: string;
   endDate: string;
-  fieldOfStudy?: string;
-  grade?: string;
+  grade: string;
   summary?: string | string[];
 }
 

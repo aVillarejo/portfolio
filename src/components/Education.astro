@@ -1,0 +1,36 @@
+---
+import type { EducationProps } from "@types";
+
+interface Props {
+  education: EducationProps[];
+  text?: string;
+}
+
+const { education, text = "Education" } = Astro.props;
+---
+
+<section class="pb-24" id="#education">
+  <h2
+    class="mb-14 font-serif text-4xl font-bold tracking-tighter text-white md:text-5xl"
+  >
+    {text}
+  </h2>
+  {
+    education.map(({ institution, degree, startDate, endDate, grade }) => (
+      <div class="mb-10">
+        <h3 class="mb-1.5 font-serif text-2xl font-semibold text-white">
+          {institution}
+        </h3>
+        <div class="flex flex-col items-start pb-2">
+          <h4 class="mb-0.5 font-serif text-2xl font-medium text-primary">
+            {degree}
+          </h4>
+          <span class="pb-0.5 text-sm text-white/70">
+            {startDate} — {endDate}
+          </span>
+        </div>
+        <p class="text-base text-neutral">{grade}</p>
+      </div>
+    ))
+  }
+</section>

@@ -89,8 +89,8 @@ export const SITE_CONTENT: SiteContent = {
         "Instituto Tecnológico José Mario Molina Pasquel y Henríquez",
       degree: "Bachelor’s in ICT Engineering",
       grade: "Information and Communication Technologies Engineer",
-      startDate: "2014",
-      endDate: "2019",
+      startDate: "Aug 2014",
+      endDate: "Jul 2019",
     },
   ],
   projects: [

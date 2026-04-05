@@ -1,34 +1,8 @@
 ---
-import { Font } from "astro:assets";
+import { SITE_CONTENT } from "@config";
+import Layout from "@layouts/Layout.astro";
 
 import "../styles/global.css";
 ---
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="icon" href="/favicon.ico" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <title>Astro</title>
-    <Font cssVariable="--font-be-vietnam-pro" />
-    <Font cssVariable="--font-gabarito" />
-  </head>
-  <body class="bg-black font-sans">
-    <main class="mx-auto max-w-3xl px-5">
-      <section class="py-24 md:py-32">
-        <h1
-          class="mb-1.5 font-serif text-7xl font-bold tracking-tightest text-white sm:text-8xl md:mb-0 md:text-9xl"
-        >
-          Astro
-        </h1>
-        <p
-          class="mb-9 font-serif text-4xl leading-[46px] font-bold tracking-tighter text-primary sm:text-5xl md:text-6xl"
-        >
-          The modern frontend framework for building faster websites.
-        </p>
-      </section>
-    </main>
-  </body>
-</html>
+<Layout />

@@ -98,7 +98,7 @@ export const SITE_CONTENT: SiteContent = {
       name: "Car Workshop",
       summary: "A car repair workshop dashboard app.",
       linkPreview: "https://car-workshop-theta.vercel.app/",
-      linkSource: "https://github.com/immois/astro-zen",
+      linkSource: "https://github.com/aVillarejo/car-workshop",
       image: "/car-workshop.png",
     },
   ],

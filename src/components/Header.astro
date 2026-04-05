@@ -1,11 +1,13 @@
 ---
 import Menu from "@icons/Menu.astro";
+import Download from "@icons/Download.astro";
 import { Image } from "astro:assets";
 import type { HeaderProps } from "@types";
 
 type Props = HeaderProps;
 
 const { siteLogo, navLinks } = Astro.props;
+const cvUrl = "/AlbertVillarejo-CV.pdf";
 ---
 
 <header
@@ -48,6 +50,21 @@ const { siteLogo, navLinks } = Astro.props;
           </li>
         ))
       }
+      <li class="relative">
+        <a
+          class={`nav-item relative block p-2 text-sm font-medium transition-all duration-500 `}
+          target="_blank"
+          rel="noopener noreferrer"
+          href={cvUrl}
+          title="CV"
+        >
+          <span
+            class="flex items-center gap-0.5 text-primary hover:text-blue-400"
+            >CV
+            <Download />
+          </span>
+        </a>
+      </li>
     </ul>
   </nav>
 </header>

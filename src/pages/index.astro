@@ -2,10 +2,12 @@
 import { SITE_CONTENT } from "@config";
 import Layout from "@layouts/Layout.astro";
 import Hero from "@components/Hero.astro";
+import Experience from "@components/Experience.astro";
 
 import "../styles/global.css";
 ---
 
 <Layout>
   <Hero {...SITE_CONTENT.hero} />
+  <Experience experience={SITE_CONTENT.experience} />
 </Layout>
